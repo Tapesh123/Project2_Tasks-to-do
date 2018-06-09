@@ -1,0 +1,50 @@
+<div class="container">	
+	<div class="jumbotron"> 
+			<img src="/assets/images/Todo.jpg" width="400" height="400" class="center"> 
+	</div>
+
+
+<h2>Add your Tasks</h2>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Type in the Task To be added or completed:</label>
+    {{!-- <input type="text" id="ca" name="name"> --}}
+    <textarea class="form-control" rows="1" id="ca" name="name"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="done">To be Added or Completed?</label>
+
+    <input type="radio" name="done" value="0" checked>Add
+    <input type="radio" name="done" value="1">Completed<br>
+    
+  </div>
+{{!-- 
+  <button type="submit">Add a task</button> --}}
+  <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+
+
+
+<h2>Tasks that are To Do!</h2>
+<ul>
+  {{#each task}}
+    {{#unless done}}
+      {{> task/task-block task=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Tasks that are completed!</h2>
+
+<ul>
+  {{#each task}}
+    {{#if done}}
+      {{> task/task-block task=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+
