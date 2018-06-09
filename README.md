@@ -5,7 +5,10 @@ Having a great to-do list app can help you get organized and get more done, whet
 A Node, Express, Handlebars, and MySQL Task to do app that lets users input their daily tasks that they need to complete and complete (check off) as they go along. 
 
 # Live
-[ heroku link to be added ]
+[https://safe-anchorage-26840.herokuapp.com/]
+
+![Image of Tasks-To-Do-List APP](https://github.com/Tapesh123/Project2_Tasks-to-do/blob/master/TaskTodo.gif)
+
 
 ## Functionality
 
